@@ -107,12 +107,12 @@ footer {
   justify-content: center;
 }
 
-/* @media (prefers-color-scheme: dark){
+@media (prefers-color-scheme: dark){
 :root {
   --text-color: #f4f2ee;
   --bg-color: #1a1a1a;
 }
-} */
+}
 
 @media (max-width: 680px) {
   .clicks {
