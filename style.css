@@ -1,0 +1,149 @@
+:root {
+  --text-color: #1a1a1a;
+  --bg-color: #f9f7f4;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+::selection {
+  background: var(--text-color);
+  color: var(--bg-color);
+  padding: 10px;
+  margin: 20px;
+}
+
+body {
+  background-color: var(--bg-color);
+  font-family: "Pixelify Sans", sans-serif;
+  color: var(--text-color);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  height: 100dvh;
+}
+
+button {
+  color: var(--text-color);
+  border: var(--text-color) 4px solid;
+  padding: 5px 10px;
+  margin: 10px;
+  font-size: 1rem;
+  background: transparent;
+  font-family: "Pixelify Sans", sans-serif;
+  cursor: pointer;
+}
+
+#copy:hover {
+  color: var(--bg-color);
+  background-color: var(--text-color);
+}
+
+h1 {
+  font-size: 3rem;
+  margin-right: 10px;
+  margin-left: 10px;
+  font-family: "Press Start 2P", sans-serif;
+}
+
+.lovingly {
+  font-size: 0.8em;
+  color: #e9e3e3;
+  background-color: #383636;
+  transform: rotate(90deg);
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 50%;
+}
+
+.head {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 10dvh;
+  border: var(--text-color) 4px solid;
+  padding: 60px 30px;
+}
+
+#joke-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 4% 4% 0 4%;
+  width: 75vw;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 10dvh;
+  border-top: var(--text-color) 4px solid;
+  padding: 50px 30px;
+  font-size: 1.2rem;
+}
+
+#joke {
+  font-size: 2rem;
+  text-align: center;
+  padding: 20px;
+  min-height: 20dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* @media (prefers-color-scheme: dark){
+:root {
+  --text-color: #f4f2ee;
+  --bg-color: #1a1a1a;
+}
+} */
+
+@media (max-width: 680px) {
+  .clicks {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+  }
+  h1 {
+    font-size: 1.8rem;
+    margin: 0;
+    line-height: 35px;
+  }
+  .head {
+    border: none;
+  }
+  footer{
+    font-size: 1rem;
+    padding: 50px 15px;
+  }
+  #joke {
+    font-size: 1.6rem;
+    padding: 0px;
+  }
+}
+
+@media (max-width: 400px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  #joke {
+    font-size: 1.4rem;
+  }
+}
